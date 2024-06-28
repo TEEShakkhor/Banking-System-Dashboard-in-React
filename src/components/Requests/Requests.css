@@ -1,0 +1,53 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 0px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  width: 100%; /* Adjust width to take full width of grid item */
+  height: 100%; /* Adjust height to take full height of grid item */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header {
+  text-align: left; /* Align text to the left */
+}
+.card-header h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.card-header p {
+  font-size: 12px;
+  color: #666;
+  margin: 5px 0 20px;
+}
+
+.chart-container {
+  flex: 1; /* Make the chart container take up remaining space */
+  width: 100%;
+}
+
+.custom-tooltip {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.custom-tooltip .label {
+  font-size: 10px;
+  color: #807e7e;
+}
+
+.custom-tooltip .value {
+  font-size: 14px;
+  font-weight: bold;
+  color: #202020;
+}
+

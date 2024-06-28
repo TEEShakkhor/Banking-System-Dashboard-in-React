@@ -1,0 +1,129 @@
+/* General Styles */
+.employee-stats {
+  display: flex;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0px;
+  flex-grow: 1;
+  flex-direction: column; /* Add flex-direction: column for better stacking on smaller screens */
+}
+
+.stat-cards {
+  display: flex;
+  flex-direction: column; /* Make it a column layout */
+}
+
+.upper-sections {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the left */
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.lower-sections {
+  text-align: left;
+  padding-top: 10px;
+}
+
+.icon-containers {
+  background-color: #d7d7d7;
+  border-radius: 50%;
+  padding: 10px 10px;
+  margin-right: 5px;
+  color: #272469;
+  font-size: 26px;
+}
+
+.icon-image {
+  width: 40px; /* Fixed size for the icon image */
+  height: 40px; /* Maintain aspect ratio */
+}
+
+.stat-infos h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.stat-infos p {
+  color: #272469;
+  margin-bottom: 5px;
+}
+
+.changes {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.changes.positive {
+  color: green;
+}
+
+.changes.negative {
+  color: red;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .employee-stats {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 10px;
+  }
+
+  .upper-sections, .lower-sections {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+
+  .icon-containers {
+    font-size: 20px; /* Reduce icon size on smaller screens */
+    padding: 8px;
+    margin-right: 10px;
+  }
+
+  .icon-image {
+    width: 80%; /* Adjust size for smaller screens */
+  }
+
+  .stat-infos h3 {
+    font-size: 20px;
+  }
+
+  .stat-infos p {
+    font-size: 14px;
+  }
+
+  .changes {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .employee-stats {
+    padding: 5px;
+  }
+
+  .icon-containers {
+    font-size: 18px; /* Further reduce icon size on smaller screens */
+    padding: 6px;
+  }
+
+  .icon-image {
+    width: 70%; /* Adjust size for smaller screens */
+  }
+
+  .stat-infos h3 {
+    font-size: 18px;
+  }
+
+  .stat-infos p {
+    font-size: 12px;
+  }
+
+  .changes {
+    font-size: 10px;
+  }
+}
+
+

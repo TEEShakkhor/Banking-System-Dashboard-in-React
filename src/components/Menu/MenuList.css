@@ -1,0 +1,79 @@
+.menu--list-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure the container takes full height */
+    justify-content: space-between; /* Space out children to push the bottom list to the bottom */
+}
+
+.menu--list {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 10px;
+}
+
+.menu--list-item {
+    padding: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.menu--list-item:hover,
+.menu--list-item.active {
+    background: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in; 
+}
+
+.menu--list-item a {
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #ffffff;
+    transition: color 0.3s ease-in; /* Add transition for color change */
+}
+
+.menu--list-item:hover a,
+.menu--list-item.active a {
+    color:#002060; /* Change text color to black on hover and active states */
+}
+
+.menu--list--bottom {
+    padding: 10px; /* Same padding as menu--list for consistency */
+    list-style: none;
+}
+
+.menu--list--bottom ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.menu--list--bottom .menu--list-item {
+    padding: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.menu--list--bottom .menu--list-item:hover,
+.menu--list--bottom .menu--list-item.active {
+    background: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.menu--list--bottom .menu--list-item a {
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #ffffff;
+    transition: color 0.3s ease-in; /* Add transition for color change */
+}
+
+.menu--list--bottom .menu--list-item:hover a,
+.menu--list--bottom .menu--list-item.active a {
+    color: #002060; /* Change text color to black on hover and active states */
+}

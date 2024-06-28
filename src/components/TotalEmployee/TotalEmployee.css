@@ -1,0 +1,61 @@
+.employee-stat {
+  display: flex;
+  
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0 px;
+  flex-grow: 1;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column; /* Make it a column layout */
+}
+
+.upper-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the left */
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.lower-section {
+  text-align: left;
+  padding-top: 10px;
+}
+
+.icon-container {
+  background-color: #d7d7d7;
+  border-radius: 50%;
+  padding: 10px 10px;
+  margin-right: 5px;
+  color: #000000;
+  font-size: 38px;
+  width: 40px; /* Fixed size for the icon image */
+  height: 40px;
+}
+
+.stat-info h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.stat-info p {
+  color: #272469;
+  margin-bottom: 5px;
+}
+
+.change {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.change.positive {
+  color: green;
+}
+
+.change.negative {
+  color: red;
+}
+
